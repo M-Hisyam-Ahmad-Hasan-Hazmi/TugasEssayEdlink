@@ -1,3 +1,10 @@
+# -*- coding: utf-8 -*-
+"""
+Spyder Editor
+
+This is a temporary script file.
+"""
+#Soal NO 1
 def luas_dan_keliling():
     # Program Menghitung Luas dan Keliling
     print
@@ -66,5 +73,34 @@ def luas_dan_keliling():
             else:
                 print("Error: Inputkan Angka Yang Benar!")
                 print()
-
+                
+#Soal NO 2
+def Bayar_Kos(Biaya_Kos = 850000, Keterlambatan = 5, Denda_Keterlambatan = 50000 ):
+    Bayar = Biaya_Kos + (Keterlambatan * Denda_Keterlambatan)
+    print("Biaya Kos = Rp. 850.000")
+    print("Denda_Terlambat = Rp. 50.000 Perhari")
+    print("Keterlambatan = 5 Hari")
+    print("Jumlah yang harus dibayar adalah: ","Rp.", Bayar)
+    print("Harus dibayar yaa!")
+    print()
+    
+while True:
+    try:
+        userInput = int(input(
+            "MENU : \n 1. Menghitung Luas dan Keliling \n 2. Bayar Kos \n 3. Quit\nPilih Nomer: "))
+        print()
+    except ValueError:
+        print("Inputan harus berupa number!")
+        print()
+    else:
+        if (userInput == 1):
+            luas_dan_keliling()
+        elif (userInput == 2):
+            Bayar_Kos()
+        elif (userInput == 3):
+            print("Terima Kasih Sudah Pakai Program Saya!")
+            break
+        else:
+            print("Pilih Salah Satu Yaa!")
+            print()
 
